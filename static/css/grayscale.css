@@ -112,10 +112,12 @@ a:focus, a:hover {
 }
 
 header {
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: auto;
-  padding: 200px 0;
+  height: 100vh; /* Full viewport height */
   text-align: center;
   color: white;
   background: url("../img/section0-bg.jpg") no-repeat bottom center scroll;
@@ -123,9 +125,22 @@ header {
   background-size: cover;
 }
 
+header .container,
+header .row,
+header .col-lg-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
 #intro-body {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 header h1 {
   font-size: 50px;
