@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{ $description := $.Param "description" }}
 {{- with $description }}<meta name="description" content="{{ . }}">{{ end }}
-{{ $author := .Params.author.name | default .Site.Author.name }}
+{{ $author := .Params.author.name | default .Site.Params.Author }}
 <meta name="author" content="{{ $author }}">
 
 <title>{{- $.Param "title" -}}</title>
